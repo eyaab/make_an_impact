@@ -10,8 +10,6 @@ class AddModel extends Component{
     render(){
       return(
         <div className="container" >
-          
-          
           <Modal
         {...this.props}
         size="md"
