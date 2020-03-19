@@ -11,10 +11,20 @@ class HeaderConnect extends Component{
     super(props);
     this.state ={deps:[], addModalShow : false, editModalShow : false}
 }
+
+
+
+
     render(){
         let addModalClose =() => this.setState({addModalShow:false});
-        return(    
+        return(
+          
+          
+
+
+
             <header id="header">
+             
             <div className="container-fluid">
         
               <div id="logo" className="pull-left">
@@ -39,7 +49,7 @@ class HeaderConnect extends Component{
                     <input type="password" class="form-control" id="exampleInputPassword1"/>
                     </div>
                   
-                    <button type="submit" class="btn btn-primary" style={{backgroundColor:"#18d26e"}}>  Submit</button>
+                    <button type="submit" class="btn btn-primary" style={{backgroundColor:"#18d26e"}}  > Submit  </button>
                        </form>
                        </div>
                        </ul>
