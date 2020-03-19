@@ -9,7 +9,7 @@ render(){
   <div class="container">
 
     <div class="section-header">
-      <h3>Contact Us</h3>
+      <h3>Contactez nous</h3>
       <form action="" method="post" role="form" class="contactForm">
         <div class="form-row">
           <div class="form-group col-md-6">
@@ -29,7 +29,7 @@ render(){
           <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
           <div class="validation"></div>
         </div>
-        <div class="text-center"><button type="submit">Send Message</button></div>
+        <div class="text-center"> <button type="submit" class="btn btn-outline-dark">Envoyer</button></div>
       </form>
 
     </div>

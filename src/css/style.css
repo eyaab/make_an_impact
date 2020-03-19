@@ -22,12 +22,14 @@ p {
   margin: 0 0 30px 0;
 }
 
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
+
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   margin: 0 0 20px 0;
@@ -122,10 +124,12 @@ h6 {
   right: 0;
   transition: all 0.5s;
   z-index: 997;
+  background: #fff;
+  opacity: 0.7;
 }
 
 #header.header-scrolled {
-  background: rgba(0, 0, 0, 0.9);
+  background: #fff;
   padding: 20px 0;
   height: 72px;
   transition: all 0.5s;
@@ -147,7 +151,7 @@ h6 {
 
 #header #logo h1 a,
 #header #logo h1 a:hover {
-  color: #fff;
+  color:rgb(36, 35, 35);;
   padding-left: 10px;
   border-left: 4px solid #18d26e;
 }
@@ -217,7 +221,7 @@ h6 {
 }
 
 #intro h2 {
-  color: #fff;
+  color: rgb(36, 35, 35);
   margin-bottom: 30px;
   font-size: 48px;
   font-weight: 700;
@@ -370,7 +374,7 @@ h6 {
   padding: 0 8px 10px 8px;
   text-decoration: none;
   display: inline-block;
-  color: #fff;
+  color:rgb(36, 35, 35);
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 13px;
@@ -593,6 +597,110 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* About Us Section
 --------------------------------*/
 
+#aboutus {
+  background: url("../img/about-bg.jpg") center top no-repeat fixed;
+  background-size: cover;
+  padding: 60px 0 40px 0;
+  position: relative;
+}
+
+#aboutus::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.92);
+  z-index: 9;
+}
+
+#aboutus .container {
+  position: relative;
+  z-index: 10;
+}
+
+#aboutus .about-col {
+  background: #fff;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
+}
+
+#aboutus .about-col .img {
+  position: relative;
+}
+
+#aboutus .about-col .img img {
+  border-radius: 4px 4px 0 0;
+}
+
+#aboutus .about-col .icon {
+  width: 64px;
+  height: 64px;
+  padding-top: 8px;
+  text-align: center;
+  position: absolute;
+  background-color: #18d26e;
+  border-radius: 50%;
+  text-align: center;
+  border: 4px solid #fff;
+  left: calc( 50% - 32px);
+  bottom: -30px;
+  transition: 0.3s;
+}
+
+#aboutus .about-col i {
+  font-size: 36px;
+  line-height: 1;
+  color: #fff;
+  transition: 0.3s;
+}
+
+#aboutus .about-col:hover .icon {
+  background-color: #fff;
+}
+
+#aboutus .about-col:hover i {
+  color: #18d26e;
+}
+
+#aboutus .about-col h2 {
+  color: #000;
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 0;
+  margin: 40px 0 12px 0;
+}
+
+#aboutus .about-col h2 a {
+  color: #000;
+}
+
+#aboutus .about-col h2 a:hover {
+  color: #18d26e;
+}
+
+#aboutus .about-col p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #333;
+  margin-bottom: 0;
+  padding: 0 20px 20px 20px;
+}
+
+
+
+
+/* Portfolio Section
+--------------------------------*/
+
+/* Testimonials Section
+--------------------------------*/
+
+/* Contact Section
+--------------------------------*/
 #contact {
   background: url("../img/about-bg.jpg") center top no-repeat fixed;
   background-size: cover;
@@ -685,16 +793,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 0;
   padding: 0 20px 20px 20px;
 }
-
-
-/* Portfolio Section
---------------------------------*/
-
-/* Testimonials Section
---------------------------------*/
-
-/* Contact Section
---------------------------------*/
 
 #contact {
   padding: 60px 0;
@@ -961,6 +1059,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 /*--------------------------------------------------------------
 # Responsive Media Queries
 --------------------------------------------------------------*/
+@media only screen and (max-width: 1000px) {
+  li{
+    display:inline-block!important;
+  }
+}
+
 
 @media (min-width: 768px) {
   #contact .contact-address,

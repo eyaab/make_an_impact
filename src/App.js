@@ -6,6 +6,7 @@ import 'tachyons' ;
 import './components/ContactUs' ;
 import HeaderConnect from './headers/HeaderConnect' ;
 import ContactUs from './components/ContactUs';
+import Aboutus from './components/Aboutus';
 class App extends Component {
 
   render(){
@@ -22,14 +23,11 @@ class App extends Component {
           <div className="carousel-item active">
             <div className="carousel-background"><img src={require('./img/intro-carousel/crop.png')} alt=""/></div>
             <div className="carousel-container">
-              <div className="carousel-content" style={{border: '2px solid',background:'#212223',opacity: '0.45',padding:'-30px',borderRadius:'50px', width:'500px' }} >
-              
-              
-                <h2 style={{ color:'#d1c027'}} >Deal 4 Tounes </h2>
-         
-                <p> Une plateforme qui offre des récompenses en accomplissant 
-                  des actions humanitaires, écologiques etc ...  </p>
-                <a href="#featured-services" className="btn-get-started scrollto">Get Started</a>
+              <div className="carousel-content" style={{border: '2px solid',background:'#fff',opacity: '0.45',padding:'-30px',borderRadius:'5px', width:'500px', height:'300px' }} >
+        
+                <h2 style={{fontSize:"30px", fontFamily:"arial", padding:'40px'}}>Créez un impact positif sur le monde qui vous entoure !</h2>
+                
+                <a href="#featured-services" className="btn-get-started scrollto">Commencez Maintenant</a>
               
               </div>
             </div>
@@ -42,7 +40,7 @@ class App extends Component {
       
     </div>
   </section>
- 
+<Aboutus/>
 <ContactUs/>
 
     </div>
