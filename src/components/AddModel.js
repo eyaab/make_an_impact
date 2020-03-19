@@ -17,46 +17,46 @@ class AddModel extends Component{
         centered
       >
         <Modal.Header closeButton>
-          <Modal.Title id="contained-modal-title-vcenter" style={{padding:'40px'}}>Sign up</Modal.Title>
+          <Modal.Title id="contained-modal-title-vcenter" style={{padding:'40px'}}>S'inscrire</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <Row >
               <Col sm={6}>
               <Form onSubmit={this.handleSubmit}>
-              <Form.Group controlId="Name">
-              <Form.Label> Your username</Form.Label>
+                <Form.Group controlId="Name">
+              <Form.Label> Nom</Form.Label>
               <Form.Control
                 type="text"
                 name="Name"
                 required
-                placeholder="Name"
+                placeholder="Nom d'utilisateur"
                />
-               <Form.Label> Your email</Form.Label>
+               <Form.Label> Adresse éléctronique</Form.Label>
               <Form.Control
                 type="email"
                 name="email"
                 required
-                placeholder="email"
+                placeholder="Adresse E-mail"
                />
-               <Form.Label> Your password</Form.Label>
+               <Form.Label> Mot de passe</Form.Label>
               <Form.Control
                 type="password"
                 name="password"
                 required
-                placeholder="password"
+                placeholder="Mot de passe"
                />
-               <Form.Label> Repeat password</Form.Label>
+               <Form.Label>Confirmer votre mot de passe</Form.Label>
               <Form.Control
                 type="password"
                 name="password"
                 required
-                placeholder="password"
+                placeholder="Mot de passe"
                />
               </Form.Group>
 
               <Form.Group>
-                  <Button variant="primary" type="submit"  style={{backgroundColor:"#18d26e",}}>
-                  Sign up
+                  <Button type="submit" class="btn btn-outline-dark" style={{backgroundColor:"#18d26e"}}>
+                  Confirmer
                   </Button>
               </Form.Group>
               </Form>
@@ -64,7 +64,7 @@ class AddModel extends Component{
           </Row>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="danger" onClick={this.props.onHide}>Close</Button>
+        <button type="button" class="btn btn-outline-dark" onClick={this.props.onHide}>Fermer</button>
         </Modal.Footer>
       </Modal>
 
