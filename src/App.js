@@ -7,12 +7,13 @@ import './components/ContactUs' ;
 import HeaderConnect from './headers/HeaderConnect' ;
 import ContactUs from './components/ContactUs';
 import Aboutus from './components/Aboutus';
+
 class App extends Component {
 
   render(){
     
   return (
-    <div className="App">
+    <div className="App" style={{fontFamily:'Roboto'}}>
    
   <HeaderConnect/>
   <section id="intro">
@@ -23,7 +24,7 @@ class App extends Component {
           <div className="carousel-item active">
             <div className="carousel-background"><img src={require('./img/intro-carousel/crop.png')} alt=""/></div>
             <div className="carousel-container">
-              <div className="carousel-content" style={{border: '2px solid',background:'#fff',opacity: '0.45',padding:'-30px',borderRadius:'5px', width:'500px', height:'300px' }} >
+              <div className="carousel-content" style={{border: '2px solid',background:'#fff',opacity: '1',padding:'-30px',borderRadius:'5px', width:'500px', height:'300px' }} >
         
                 <h2 style={{fontSize:"30px", fontFamily:"arial", padding:'40px'}}>Créez un impact positif sur le monde qui vous entoure !</h2>
                 

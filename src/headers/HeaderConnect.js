@@ -1,5 +1,7 @@
 import React,{ Component } from 'react';
 import AddModel from '../components/AddModel';
+import '../css/style.css' ;
+
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -16,16 +18,16 @@ class HeaderConnect extends Component{
         let addModalClose =() => this.setState({addModalShow:false});
         return(    
             <header id="header">
-            <div className="container-fluid">
+            <div className="container-fluid" style={{fontFamily:'Roboto'}}>
         
               <div id="logo" className="pull-left">
-              <h1><a href="#intro" className="scrollto">Deal4Tounes</a></h1>
+              <h1><a href="#intro" className="scrollto" style={{fontFamily:'Roboto'}}>Deal4Tounes</a></h1>
               </div>
               <nav id="nav-menu-container">
                 <ul className="nav-menu">
                
                   <li className="menu-active"><a href="#intro">Accueil</a></li>
-                  <li><a href="#aboutus">Qui sommes-nous?</a></li>
+                  <li><a href="#aboutus" style={{fontFamily:'Roboto'}}>Qui sommes-nous</a></li>
                   <li><a href="#contact">Contact</a></li>
                    <li className="dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><a href="">Login</a>
                     <ul>
@@ -39,9 +41,9 @@ class HeaderConnect extends Component{
                    <div class="form-group">
                    <label for="exampleInputPassword1">Mot de passe</label>
                     <input type="password" class="form-control" id="exampleInputPassword1"/>
-                    <a href="" style={{fontFamily:'arial', fontSize:'10px'}}>Mot de passe oublié ?</a>
+                    <a href="" style={{fontFamily:'Roboto', fontSize:'10px'}}>Mot de passe oublié ?</a>
                     </div>
-                    <button type="submit" class="btn btn-outline-dark"style={{backgroundColor:"#18d26e"}}>Se connecter</button>
+                    <button type="submit" class="btn btn-outline-dark"style={{backgroundColor:"#18d26e", fontFamily :'Roboto'}}>Se connecter</button>
                        </form>
                        </div>
                        </ul>
